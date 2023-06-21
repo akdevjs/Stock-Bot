@@ -2,11 +2,11 @@ import { doc, setDoc } from "firebase/firestore";
 import { db } from "@/firebase";
 import { dummyData } from "../Data/dummyData";
 
-import Layout from "@/Components/Common/Layout";
-import ConsumptionSlider from "@/Components/Dashboard/ConsumptionSlider";
-import DriversDemand from "@/Components/Dashboard/DriversDemand";
-import RecentIssue from "@/Components/Dashboard/RecentIssue";
-import ProductIssue from "@/Components/Dashboard/ProductIssue";
+import Layout from "@/components/Common/Layout";
+import ConsumptionSlider from "@/components/Dashboard/ConsumptionSlider";
+import DriversDemand from "@/components/Dashboard/DriversDemand";
+import RecentIssue from "@/components/Dashboard/RecentIssue";
+import ProductIssue from "@/components/Dashboard/ProductIssue";
 
 export default function Home() {
   // to add the date in firestore
