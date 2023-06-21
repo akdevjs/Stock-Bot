@@ -85,7 +85,21 @@ export default function Home() {
       title="StockBot - Homepage"
       description="THis si Home page description"
     >
-      <h1>Pending</h1>
+      <ConsumptionSlider />
+      {/* Total below Wrapper */}
+      <button onClick={AddData}>CLick me</button>
+      <div className="flex gap-6">
+        {/* Tables */}
+        <div className="flex flex-col gap-6">
+          <DriversDemand />
+          <RecentIssue />
+        </div>
+
+        {/* Form */}
+        <div className="w-full pr-2">
+          <ProductIssue />
+        </div>
+      </div>
     </Layout>
   );
 }

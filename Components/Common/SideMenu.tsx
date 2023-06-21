@@ -32,7 +32,7 @@ const SideMenu = () => {
 
   return (
     <div
-      className={`font-[Poppins] a sm:static bg-blue-600 w-80 h-full z-50 transition-transform duration-500 ease-in-out transform ${
+      className={`font-[Poppins]  sm:static bg-blue-600 w-80 h-full z-50 transition-transform duration-500 ease-in-out transform ${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
       } sm:translate-x-0`}
     >
@@ -42,7 +42,7 @@ const SideMenu = () => {
       >
         <ChevronDownIcon className="h-6 w-6 text-white" />
       </span>
-      <div className="sidebar overflow-y-auto text-center bg-gray-900 shadow h-screen">
+      <div className="sidebar sticky top-0 overflow-y-auto text-center bg-gray-900 shadow h-screen">
         <div className="text-gray-100 text-xl p-2.5">
           <DocumentIcon className="h-6 w-6 text-blue-600 mx-auto" />
           <h1 className="text-[0.9375rem] text-xl text-gray-200 font-bold">
