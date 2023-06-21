@@ -16,12 +16,77 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  font-family: "Nunito", sans-serif;
+  font-family: "Urbanist", sans-serif;
+}
+
+.item-enter {
+  opacity: 0;
+}
+
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.table {
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a2c0d4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7898b4;
+}
+
+/* For Firefox */
+::-moz-scrollbar {
+  width: 8px;
+}
+
+::-moz-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #a2c0d4;
+  border-radius: 4px;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background-color: #7898b4;
+}
+
+/* For Edge and IE */
+::-ms-scrollbar {
+  width: 8px;
+}
+
+::-ms-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-ms-scrollbar-thumb {
+  background-color: #a2c0d4;
+  border-radius: 4px;
+}
+
+::-ms-scrollbar-thumb:hover {
+  background-color: #7898b4;
 }
