@@ -64,7 +64,7 @@ const ConsumptionSlider = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
+      items: 5,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },

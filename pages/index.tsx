@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         {/* Form */}
-        <div>
+        <div className="w-full pr-2">
           <ProductIssue />
         </div>
       </div>

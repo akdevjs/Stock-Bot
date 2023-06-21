@@ -90,3 +90,44 @@
 ::-ms-scrollbar-thumb:hover {
   background-color: #7898b4;
 }
+
+@media (max-width: 2000px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 1900px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media (max-width: 1800px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 1700px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 1600px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 1500px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 1300px) {
+  html {
+    font-size: 55%;
+  }
+}

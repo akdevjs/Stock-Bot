@@ -168,7 +168,7 @@ export default function ProductIssue() {
   };
 
   return (
-    <div className="px-4   min-w-[480px]">
+    <div className="px-4 w-full min-w-[30rem]">
       <h1 className="text-3xl px-4 font-bold text-blue-600 mt-5 mb-6">
         Issue Products
       </h1>
