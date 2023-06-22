@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { auth } from "@/firebase";
 import {
   ChevronDownIcon,
   HomeIcon,
@@ -26,6 +28,14 @@ const SideMenu = () => {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+  const handleSignOut = async () => {
+    try {
+      await signOut(auth);
+      router.push("/");
+    } catch (error) {
+      console.error("Error signing out:", error);
+    }
   };
 
   const isActive = (pathname: string) => router.pathname === pathname;
@@ -154,7 +164,7 @@ const SideMenu = () => {
           </div>
 
           <div
-            onClick={() => router.push("/logout")}
+            onClick={handleSignOut}
             className={`p-2.5 mt-2 flex items-center rounded-md px-2.5 duration-300 cursor-pointer ${
               isActive("/logout") ? "bg-blue-600" : "hover:bg-blue-600"
             }`}
